@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const a = [1, 2, 3, 4];
+        a.push(30);
+        a.pop(2);
+
+        console.log(a);
+        const b = [6, 7, 8];
+        const concate = a.concat(b);
+        console.log(concate);
+
+
+        const arr = [1, 2, 3, 4, 5, 7, 8, 65, 4, 3];
+        const newArr = arr.slice(2, -2);
+        console.log(newArr);
+
+
+        const c = [1, 2, 3, 8];
+        c.splice(0, 1, 67);
+        c.splice(1, 1, 60);
+        c.splice(2, 1, 80);
+        c.splice(1, 4);
+        console.log(c);
+
+        //reversed string
+        function revstring(string) {
+            let rev = "";
+            for ((i = string.length - 1); i >= 0; i--) {
+                rev = rev + string[i];
+            } return rev;
+        }
+        console.log(revstring("helloooo"));
+
+        let str1 = "shruti";
+        var rev = "";
+        for (i = str1.length - 1; i >= 0; i--) {
+            rev = rev + str1[i];
+        }
+        if (rev == str1) {
+            console.log(str1 + " is palindrome");
+        }
+        else {
+            console.log(str1 + " is not palindrome");
+        }
+        let w = 121;
+        let rev3 = 0;
+        let x = w;
+        while (x > 0) {
+            let digit = x % 10;
+            rev3 = rev3 * 10 + digit;
+            x = Math.floor(x / 10);
+        }
+        if (rev3 == w) {
+            console.log("is palindrome");
+        } else {
+            console.log("is not palindrome");
+        }
+        var u = 0
+        var f = 1;
+        var nextterm;
+        var n = 10;
+        for (let i = 0; i < n; i++) {
+            console.log(u + "");
+            nextterm = u + f;
+            u = f;
+            f = nextterm;
+        }
+let l=23467;
+let cnt=0;
+while(l>0){
+    l=Math.floor(l/10);
+    cnt=cnt+1;
+}
+console.log(cnt);
+    </script>
+</body>
+
+</html>
